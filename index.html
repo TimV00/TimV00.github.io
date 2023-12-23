@@ -4,10 +4,19 @@
     </head>
     <body style="background-color: #e9ceec;">
         <center>
-            <h1>Website Under Construction,</h1><br/>
-            <h1>please check back later</h1><br/>
-            <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDQ1bWFmNHJlbHFuMHBuOTFuenV3ZTBiNjE3MjllcmZuajdwbDlxaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l46CyJmS9KUbokzsI/giphy.gif" alt="patrick" width="30%"><br />
-            <button type="button" onclick="alert('Hello World!')">Something mysterious...</button>
+            <input id="name" type="text">
+            <button type="button" onclick="EnterName()">Submit</button>
+            <p style="color:green" id="demo"></p>
+         
+         
+            <script>
+                function EnterName() {
+                    let x = document.getElementById("name").value;
+         
+                    document.getElementById("demo").innerHTML =
+                        "Welcome to the website " + x;
+                }
+            </script>
         </center>
     </body>
 </html>
