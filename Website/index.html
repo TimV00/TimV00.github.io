@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tim's Funny Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+</head>
+
+<body style="background-color: #e9ceec;">
+
+    <center>
+        <h1>Enter Your Color Choice</h1>
+        <input id="colorEdit" type="text" readonly>
+        <input id="colorPicker" type="color" value="#0000ff" onChange="changeColorPicker()" />
+        <button type="button" onclick="changecolor()">
+            Color
+        </button>
+
+        <script>
+            function changecolor() {
+                // Generating random color each time
+                let color = "#" + (Math.random() * 16777215 | 0).toString(16);
+
+                $("body").css("background-color", color);
+                colorPicker.value = color;
+                document.getElementById("colorEdit").value = color;
+            }
+        </script>
+
+        <script>
+            function changeColorPicker() {
+                $("body").css("background-color", colorPicker.value);
+                document.getElementById("colorEdit").value = colorPicker.value;
+            }
+        </script>
+    </center>
+</body>
+
+<footer>
+    Footer HERE
+    <nav>
+        <a href="./FAQ.html">FAQ</a>
+    </nav>
+</footer>
+
+</html>
