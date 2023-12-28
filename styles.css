@@ -1,9 +1,18 @@
-.footer {
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
+    margin: auto;
     width: 100%;
-    background-color: red;
-    color: white;
+    height: 75px;
     text-align: center;
+    background-color: rgba(181, 221, 248, 0.87);
+    color: white;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
