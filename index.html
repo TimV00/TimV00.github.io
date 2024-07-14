@@ -8,41 +8,14 @@
     </script>
 </head>
 
-<ul>
-    <nav>
-        <a href="./index.html">Home</a>
-        <a href="./Content.html">Content</a>
-        <a href="./FAQ.html">FAQ</a>
-    </nav>   
-</ul>
-
-<body style="background-color: #ffffff;">
+<body>
 
     <center>
         <h1>Enter Your Color Choice</h1>
         <input id="colorEdit" type="text" readonly>
-        <input id="colorPicker" type="color" value="#ffffff" onChange="changeColorPicker()" />
-        <button type="button" onclick="changecolor()">
-            Color
-        </button>
-
-        <script>
-            function changecolor() {
-                // Generating random color each time
-                let color = "#" + (Math.random() * 16777215 | 0).toString(16);
-
-                $("body").css("background-color", color);
-                colorPicker.value = color;
-                document.getElementById("colorEdit").value = color;
-            }
-        </script>
-
-        <script>
-            function changeColorPicker() {
-                $("body").css("background-color", colorPicker.value);
-                document.getElementById("colorEdit").value = colorPicker.value;
-            }
-        </script>
+        <input id="colorPicker" type="color" value="#ffffff" onchange="changeColor(event)"/>
+   
+        <script src="website.js"></script>
     </center>
 </body>
 
@@ -50,7 +23,7 @@
     <nav>
         <a href="./index.html">Home</a>
         <a href="./Content.html">Content</a>
-        <a href="./FAQ.html">FAQ</a>
+        <a href="./Info.html">Info</a>
     </nav>
 </footer>
 

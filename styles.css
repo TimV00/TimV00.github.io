@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --main-color: #ffffff; /* Set a default color */
+  }
+
 footer {
     position: fixed;
     left: 0;
@@ -16,3 +22,57 @@ ul {
     padding: 0;
     
   }
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--main-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+    width: 770px;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.wrapper .content-box{
+    padding: 13px 20px 0;
+    border-radius: 10px;    
+    border: 1px solid #afacac;
+}
+
+.content-box .typing-text {
+    max-height: 255px;
+    overflow-y: auto;
+    scrollbar-width: none; /* Setting the property here instead of using .typing-text::-webkit-scrollbar 
+    since it doesn't work for some reason*/
+}
+
+.typing-text p{
+    font-size: 21px;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-break: break-all;
+}
+
+.content-box .content{
+    display: flex;   
+    justify-content: space-between; 
+}
+
+.content .result-details{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.result-details .li{
+    list-style: none;
+}
+
+
+
