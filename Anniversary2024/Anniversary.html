@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary 2024</title>
+    <link rel="stylesheet" href="stylesA.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Centered Image -->
+        <img src="cats/cat1.jpg" alt="Anniversary Image" class="centered-image">
+
+        <h1>Enter the Secret Password</h1>
+        <input type="password" id="password" placeholder="Enter password">
+        <button onclick="checkPassword()">Enter</button>
+        <p id="error-message" class="hidden">Incorrect password. Please try again.</p>
+        <button id="btConfetti" class="fire-btn hidden">Click Me!</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script src="Anniversary.js"></script>
+
+    <!-- Back Button -->
+    <button class="back-button" onclick="goBack()">Back</button>
+</body>
+
+</html>

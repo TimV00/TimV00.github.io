@@ -1,30 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Tim's Funny Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-    </script>
-</head>
+<html>
+    <head>
+        <title>Tim's Funny Website</title>
+    </head>   
 
 <body>
 
-    <center>
-        <h1>Enter Your Color Choice</h1>
-        <input id="colorEdit" type="text" readonly>
-        <input id="colorPicker" type="color" value="#ffffff" onchange="changeColor(event)"/>
-   
-        <script src="website.js"></script>
-    </center>
+<div class="bgimg">
+  <div class="topleft">
+    <p>TV</p>
+  </div>
+  <div class="middle">
+    <h1>Welcome To My Website!</h1>
+    <hr>
+    <br>
+    <div class="options-container">
+        <button class="option-button button1" onclick="navigateToPage('./Content.html')">Check Out My Content</button>
+    </div>
+    
+    <script>
+        // Function to navigate to the selected page
+        function navigateToPage(url) {
+            window.location.href = url;
+        }
+    </script>
+    <style>
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Space between buttons */
+        }
+    
+        .option-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3d0e0e;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    
+        .option-button:hover {
+            background-color: #0056b3;
+        }
+    </style>    
+  </div>
+  <div class="bottomleft">
+    <p>Website Created by Timothy Vo</p>
+  </div>
+</div>
+
 </body>
 
-<footer>
-    <nav>
-        <a href="./index.html">Home</a>
-        <a href="./Content.html">Content</a>
-        <a href="./Info.html">Info</a>
-    </nav>
-</footer>
+<style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+    
+    .bgimg {
+      background-image: url('background.jpg');
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      color: white;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 25px;
+    }
+    
+    .topleft {
+      position: absolute;
+      top: 0;
+      left: 16px;
+    }
+    
+    .bottomleft {
+      position: absolute;
+      bottom: 0;
+      left: 16px;
+    }
+    
+    .middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    
+    hr {
+      margin: auto;
+      width: 40%;
+    }
+    </style>
 
 </html>

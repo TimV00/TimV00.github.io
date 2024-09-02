@@ -1,0 +1,148 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.container {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.centered-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.back-button {
+    margin-top: 20px;
+    position: fixed;
+    bottom: 20px;
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Shake animation */
+.shake {
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-10px); }
+    40%, 80% { transform: translateX(10px); }
+}
+
+.question-container {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.options-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.options-list li {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.options-list li:hover {
+    background-color: #ddd;
+}
+
+.options-list li.correct {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.options-list li.incorrect {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+#feedback {
+    color: #4CAF50;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#retry-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#retry-button:hover {
+    background-color: #333;
+}

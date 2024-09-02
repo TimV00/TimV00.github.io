@@ -2,53 +2,83 @@
 <html lang="en">
 
 <head>
-    <title>Content</title>
+    <title>Tim's Funny Website</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
 </head>
 
-<body>
-    <div class="wrapper">
-        <div class="content-box">
-            <div class="typing-text">
-                <p>Nobody really understood Kevin. It wasn't that he was super strange or difficult. It was more that there wasn't enough there that anyone wanted to take the time to understand him. This was a shame as Kevin had many of the answers to the important questions most people who knew him had. It was even more of a shame that they'd refuse to listen even if Kevin offered to give them the answers. So, Kevin remained silent, misunderstood, and kept those important answers to life to himself. Nobody really understood Kevin. It wasn't that he was super strange or difficult. It was more that there wasn't enough there that anyone wanted to take the time to understand him. This was a shame as Kevin had many of the answers to the important questions most people who knew him had. It was even more of a shame that they'd refuse to listen even if Kevin offered to give them the answers. So, Kevin remained silent, misunderstood, and kept those important answers to life to himself.</p>   
-            </div> 
-            <div class="content">
-                <ul class="result-details">
-                    <li class="time">
-                        <p>Time Left:</p>    
-                        <span><b>60</b>s</span>
-                    </li>
-                    <li class="mistake">
-                        <p>Mistakes:</p>    
-                        <span>0</span>
-                    </li>
-                    <li class="wpm">
-                        <p>WPM:</p>    
-                        <span>0</span>
-                    </li>  
-                    <li class="cpm">
-                        <p>CPM:</p>    
-                        <span>0</span>
-                    </li>  
-                </ul>
-                <button>Try Again</button>
-            </div>  
-        </div>
-    </div>
-    <script src="website.js"></script>
-</body>
+<div class="options-container">
+    <button class="option-button button1" onclick="navigateToPage('./Index.html')">Home</button>
+    <button class="option-button button2" onclick="navigateToPage('./TypingTest.html')">Typing Test</button>
+    <button class="option-button button3" onclick="navigateToPage('./ColorPicker.html')">Color Picker</button>
+    <button class="option-button button4" onclick="navigateToPage('./Anniversary2024/Anniversary.html')">Anniversary 2024</button>
+    <button class="option-button button5" onclick="navigateToPage('./Info.html')">Info</button>
+</div>
 
+<script>
+    // Function to navigate to the selected page
+    function navigateToPage(url) {
+        window.location.href = url;
+    }
+</script>
 
-<footer>
-    <nav>
-        <a href="./index.html">Home</a>
-        <a href="./Content.html">Content</a>
-        <a href="./Info.html">Info</a>
-    </nav>
-</footer>
+<style>
+    .options-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Space between buttons */
+    }
+
+    .option-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007BFF;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .option-button:hover {
+        background-color: #0056b3;
+    }
+
+    .button1 {
+        background-color: #0b2a4d;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;       
+    }
+
+    .button2 {
+        background-color: #83337c;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;       
+    }
+
+    .button3 {
+        background-color: #2a4d0e;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;       
+    }
+    
+    .button4 {
+        background-color: #bf76ce;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;       
+    }     
+
+    .button5 {
+        background-color: #b8343a;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;       
+    } 
+</style>
 
 </html>

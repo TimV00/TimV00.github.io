@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary</title>
+    <link rel="stylesheet" href="stylesA2.css">
+</head>
+<body>
+    <div class="question-container">
+        <h1>Where did we eat on last year's Anniversary?</h1>
+        <ul class="options-list">
+            <li onclick="checkAnswer(this, false, './Anniversary2024/AnniversaryUnlocked5.html')">Sawa Hibachi Steakhouse and Sushi</li>
+            <li onclick="checkAnswer(this, true, 'AnniversaryUnlocked5.html')">Soho EXPRESS Sushi Hibachi</li>
+            <li onclick="checkAnswer(this, false, 'AnniversaryUnlocked5.html')">Nuovo Restaurant</li>
+            <li onclick="checkAnswer(this, false, 'AnniversaryUnlocked5.html')">Crazy Good Kitchen</li>
+        </ul>
+        <p id="feedback" class="hidden">Correct! Final Question...</p>
+    </div>
+    <button id="retry-button" class="hidden" onclick="retry()">Retry</button>
+        <!-- Back Button -->
+    <button class="back-button" onclick="goBack()">Back</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script src="Anniversary.js"></script>
+</body>
+</html>
