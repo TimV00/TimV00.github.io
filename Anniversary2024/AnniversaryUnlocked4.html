@@ -9,14 +9,16 @@
 </head>
 <body>
     <div class="question-container">
+        <img src="cats/cateat.jpg" alt="Anniversary Image" class="centered-image">
         <h1>Where did we eat on last year's Anniversary?</h1>
         <ul class="options-list">
-            <li onclick="checkAnswer(this, false, './Anniversary2024/AnniversaryUnlocked5.html')">Sawa Hibachi Steakhouse and Sushi</li>
-            <li onclick="checkAnswer(this, true, 'AnniversaryUnlocked5.html')">Soho EXPRESS Sushi Hibachi</li>
-            <li onclick="checkAnswer(this, false, 'AnniversaryUnlocked5.html')">Nuovo Restaurant</li>
-            <li onclick="checkAnswer(this, false, 'AnniversaryUnlocked5.html')">Crazy Good Kitchen</li>
+            <li data-correct="false" onclick="checkAnswer(this, 'AnniversaryUnlocked5.html')">Sawa Hibachi Steakhouse and Sushi</li>
+            <li data-correct="true" onclick="checkAnswer(this, 'AnniversaryUnlocked5.html')">Soho EXPRESS Sushi Hibachi</li>
+            <li data-correct="false" onclick="checkAnswer(this, 'AnniversaryUnlocked5.html')">Nuovo Restaurant</li>
+            <li data-correct="false" onclick="checkAnswer(this, 'AnniversaryUnlocked5.html')">Crazy Good Kitchen</li>            
         </ul>
-        <p id="feedback" class="hidden">Correct! Final Question...</p>
+        <div id="content" data-id="4"></div>
+        <p id="feedback" class="hidden"></p>
     </div>
     <button id="retry-button" class="hidden" onclick="retry()">Retry</button>
         <!-- Back Button -->

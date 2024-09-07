@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(to bottom, #ee8fce 0%, #e0dce0 100%);
+  background-repeat: no-repeat;
+}
+
+.puzzle-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#puzzle-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 2px;
+  border: 2px solid #333;
+}
+
+.piece {
+  background-image: url('hiba.jpg');
+  background-size: 300px 300px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.empty {
+  background: none;
+}
+
+#almost-solve-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #c04d00;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#almost-solve-btn:hover {
+  background-color: #861809;
+}
+
+.hidden {
+  display: none;
+}

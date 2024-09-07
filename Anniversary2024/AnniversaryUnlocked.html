@@ -9,13 +9,15 @@
 </head>
 <body>
     <div class="question-container">
+        <img src="cats/catmeet.gif" alt="Anniversary Image" class="centered-image">
         <h1>Where did we first meet?</h1> <!-- Change the question as needed -->
         <ul class="options-list">
-            <li onclick="checkAnswer(this, false, 'AnniversaryUnlocked2.html')">All Systems Go</li>
-            <li onclick="checkAnswer(this, false, 'AnniversaryUnlocked2.html')">Worcester Public Market</li>
-            <li onclick="checkAnswer(this, true, 'AnniversaryUnlocked2.html')">Boomer's</li> <!-- Correct answer -->
-            <li onclick="checkAnswer(this, false, 'AnniversaryUnlocked2.html')">Pho Sure</li>
+            <li data-correct="false" onclick="checkAnswer(this, 'AnniversaryUnlocked2.html')">All Systems Go</li>
+            <li data-correct="false" onclick="checkAnswer(this, 'AnniversaryUnlocked2.html')">Worcester Public Market</li>
+            <li data-correct="true" onclick="checkAnswer(this, 'AnniversaryUnlocked2.html')">Boomer's</li> <!-- Correct answer -->
+            <li data-correct="false" onclick="checkAnswer(this, 'AnniversaryUnlocked2.html')">OneZo</li>            
         </ul>
+        <div id="content" data-id="1"></div>
         <p id="feedback" class="hidden"></p>
     </div>
     <button id="retry-button" class="hidden" onclick="retry()">Retry</button>

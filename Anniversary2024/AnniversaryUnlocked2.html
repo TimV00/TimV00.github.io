@@ -9,14 +9,16 @@
 </head>
 <body>
     <div class="question-container">
+        <img src="cats/catmovie.jpg" alt="Anniversary Image" class="centered-image">
         <h1>What movie did we watch RIGHT before we started dating?</h1>
         <ul class="options-list">
-            <li onclick="checkAnswer(this, true, 'AnniversaryUnlocked3.html')">Kung Fu Panda 3</li>
-            <li onclick="checkAnswer(this, false, 'AnniversaryUnlocked3.html')">Rush Hour 3</li>
-            <li onclick="checkAnswer(this, false, 'AnniversaryUnlocked3.html')">Mean Girls</li>
-            <li onclick="checkAnswer(this, false, 'AnniversaryUnlocked3.html')">Superbad</li>
+            <li data-correct="true" onclick="checkAnswer(this, 'AnniversaryUnlocked3.html')">Kung Fu Panda 3</li>
+            <li data-correct="false" onclick="checkAnswer(this, 'AnniversaryUnlocked3.html')">Rush Hour 3</li>
+            <li data-correct="false" onclick="checkAnswer(this, 'AnniversaryUnlocked3.html')">Mean Girls</li>
+            <li data-correct="false" onclick="checkAnswer(this, 'AnniversaryUnlocked3.html')">Superbad</li>
         </ul>
-        <p id="feedback" class="hidden">Correct! Next Question...</p>
+        <div id="content" data-id="2"></div>
+        <p id="feedback" class="hidden"></p>
     </div>
     <button id="retry-button" class="hidden" onclick="retry()">Retry</button>
         <!-- Back Button -->

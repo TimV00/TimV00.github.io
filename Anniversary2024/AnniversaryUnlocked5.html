@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary</title>
+    <link rel="stylesheet" href="stylesA2.css">
+</head>
+<body>
+    <div class="question-container">
+        <img src="cats/catcar.jpg" alt="Anniversary Image" class="centered-image">
+        <h1>What is my dream car?</h1>
+        <ul class="options-list">
+            <li data-correct="false" onclick="checkAnswer(this, './puzzle/puzzle.html')">Kia Soul</li>
+            <li data-correct="false" onclick="checkAnswer(this, './puzzle/puzzle.html')">Nissan Cube</li>
+            <li data-correct="false" onclick="checkAnswer(this, './puzzle/puzzle.html')">Toyota Supra</li>
+            <li data-correct="true" onclick="checkAnswer(this, './puzzle/puzzle.html')">Honda NSX</li>            
+        </ul>
+        <div id="content" data-id="5"></div>
+        <p id="feedback" class="hidden"></p>
+    </div>
+    <button id="retry-button" class="hidden" onclick="retry()">Retry</button>
+        <!-- Back Button -->
+    <button class="back-button" onclick="goBack()">Back</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script src="Anniversary.js"></script>
+</body>
+</html>

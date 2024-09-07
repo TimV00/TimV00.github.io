@@ -9,13 +9,18 @@
 </head>
 
 <div class="options-container">
-    <button class="option-button button1" onclick="navigateToPage('./Index.html')">Home</button>
-    <button class="option-button button2" onclick="navigateToPage('./TypingTest.html')">Typing Test</button>
-    <button class="option-button button3" onclick="navigateToPage('./ColorPicker.html')">Color Picker</button>
-    <button class="option-button button4" onclick="navigateToPage('./Anniversary2024/Anniversary.html')">Anniversary 2024</button>
-    <button class="option-button button5" onclick="navigateToPage('./Info.html')">Info</button>
+    <button class="option-button button1" style="background-color: #0b2a4d;"
+        onclick="navigateToPage('./Index.html')">Home</button>
+    <button class="option-button button2" style="background-color: #83337c;"
+        onclick="navigateToPage('./TypingTest.html')">Typing Test</button>
+    <button class="option-button button3" style="background-color: #2a4d0e"
+        onclick="navigateToPage('./ColorPicker.html')">Color Picker</button>
+    <button class="option-button button4" style="background-color: #bf76ce;"
+        onclick="navigateToPage('./Anniversary2024/Anniversary.html')">❤️❤️Anniversary 2024❤️❤️</button>
+    <button class="option-button button5" style="background-color: #b8343a;"
+        onclick="navigateToPage('./Info.html')">Info</button>
 </div>
-
+<script src="Website.js"></script>
 <script>
     // Function to navigate to the selected page
     function navigateToPage(url) {
@@ -24,10 +29,20 @@
 </script>
 
 <style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: white;
+        font-family: 'Montserrat', sans-serif;
+    }
+
     .options-container {
         display: flex;
         flex-direction: column;
-        gap: 10px; /* Space between buttons */
+        gap: 10px;
+        /* Space between buttons */
     }
 
     .option-button {
@@ -35,16 +50,18 @@
         font-size: 16px;
         border: none;
         border-radius: 5px;
-        background-color: #007BFF;
+        /*background-color: #007BFF;
+        */
         color: white;
         cursor: pointer;
         transition: background-color 0.3s;
     }
 
+    /*
     .option-button:hover {
         background-color: #0056b3;
     }
-
+    
     .button1 {
         background-color: #0b2a4d;
         color: white;
@@ -79,6 +96,7 @@
         cursor: pointer;
         transition: background-color 0.3s;       
     } 
+        */
 </style>
 
 </html>
